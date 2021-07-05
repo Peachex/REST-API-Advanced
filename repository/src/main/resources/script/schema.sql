@@ -3,7 +3,7 @@ CREATE TABLE gift_certificates
     gift_certificate_id bigint         NOT NULL AUTO_INCREMENT,
     certificate_name    varchar(256)   NOT NULL,
     description         text           NOT NULL,
-    price               decimal(10, 0) NOT NULL,
+    price               decimal(10, 2) NOT NULL,
     duration            int            NOT NULL,
     create_date         datetime       NOT NULL,
     last_update_date    datetime DEFAULT NULL,

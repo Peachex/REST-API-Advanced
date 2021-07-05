@@ -14,6 +14,9 @@ public class SpringBootApp {
      * @param args the input arguments
      */
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootApp.class, args);
+        SpringApplication application = new SpringApplication(SpringBootApp.class);
+        application.setAdditionalProfiles("prod");
+        application.run(args); // TODO: 6/29/2021 set active profile
+        // TODO: 6/29/2021 Rename classes: EntityFieldsName, ErrorAttribute
     }
 }
